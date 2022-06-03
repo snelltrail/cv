@@ -1,0 +1,329 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[hidelinks, 10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+% Fit-to-wdith table columns, Y gives fit-to-width *centered* column
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+% Suppress page numbers
+\pagestyle{empty}
+
+\usepackage[margin=0.5in]{geometry}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Daniel Edward Snell - Curriculum Vitae} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+    \begin{tabbing} % Enables tabbing
+        \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+        {\bf Location} \> Auckland, New Zealand\\
+        {\bf Date of birth} \> 9 June 1994 \\ % Date of birth 
+        {\bf Nationality} \> New Zealand % Nationality
+    \end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+    \begin{tabbing} % Enables tabbing
+        \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+        % {\bf Phone} \> +64 21 210 2470 \\ % Home phone
+        {\bf Phone} \> +61 431 626 914 \\ % Home phone
+        {\bf Email} \> \href{mailto:dsnell2009@gmail.com}{\underline{dsnell2009@gmail.com}} \\ % Email address
+        {\bf GitHub} \> \href{https://github.com/snelltrail}{\underline{snelltrail}} \\
+        % {\bf Kaggle} \> \href{https://www.kaggle.com/danielsnell/}{danielsnell}
+        % {\bf LinkedIn} \>  \\
+        %todo Make a FUCKING LINKEDIN!! 
+    \end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%   PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+%\section{Personal Profile}
+%
+%My research so far has been in differential geometry, specifically in the field of conformal geometry. 
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+%TODO Make a UoA section and then put qualifications under that?
+
+\tabbedblock{
+    \bf{2017-} \> PhD in Mathematics - The University of Auckland. Expected completion: September 2020 \\[5pt]
+    \>\+
+    \textit{GPA:} \> \textbf{8.63} (out of 9)
+    % \textit{Provisional title:} \> Conservation Laws and Symmetries for Conformal and K\"{a}hler Manifolds
+}
+
+\tabbedblock{
+    \bf{2017-2018} \> \textbf{Data Structures and Algorithms} - Coursera
+}
+
+\tabbedblock{
+    \bf{2016} \> MSc with First Class Honours in Mathematics - The University of Auckland
+    % \textit{Thesis title:} \> Conserved Quantities on Conformal Manifolds and BGG Sequences
+}
+
+\tabbedblock{
+    \bf{2012-2015} \> BSc (Hons) First Class in Mathematics - The University of Auckland
+    % \textit{Dissertation title:} \> Conformal geometry and conserved quantities
+}
+
+% \tabbedblock{
+%     \bf{2012-2014} \> \href{https://www.myequals.net/#/sharelink/bb7a7ab9-7913-4dec-991c-5cbe92473ac0/0ef7215d-fcb0-4957-9296-d157373f54d1}{BSc in Mathematics} - The University of Auckland
+% }
+
+% \tabbedblock{
+%     \bf{2007-2011} \> Secondary Education - Wellington College\\[5pt]
+%     \>\+
+% \textit{Achievements}   \> Dux (Valedictorian) of School  \\
+% \> NZQA Outstanding Scholar Award (top 60 students in cohort nationally) \\
+% \> Top Student nationally in NZQA Scholarship Latin (2010)
+
+%----------------------------------------------------------------------------------------
+%   IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical skills and projects}
+
+\skillgroup{Programming languages}
+{
+    \begin{tabularx}{\textwidth}{Y Y}
+        \textit{Python} - Proficient &
+        % \textit{HTML, CSS, JavaScript} - Beginner\\
+        % \textit{Swift} - Beginner, some iOS App development experience\\
+        \textit{Rust} - Beginner
+        % \texit{\LaTeX} - Proficient\\
+        % I also enjoy learning and playing with Vimscript and Bash to improve my Neovim and zsh configurations.
+    \end{tabularx}
+}
+
+\skillgroup{2018 Google House Price Prediction competition}
+{
+    {Finished \textbf{6th} place} out of 252 Australian and New Zealand university students in a \textbf{Machine learning} competition hosted on Kaggle.
+    Used the \textbf{Python} \texttt{Tensorflow} and \texttt{scikit-learn} libraries.
+    Received a prize from Google.
+}
+
+\skillgroup{Tutorial attendance sheet generation script}{
+    Wrote a \textbf{Python script} to automate the generation of tutorial attendance sheets.
+    Now used for several courses in the Mathematics Department at the University of Auckland saving \textbf{tens of hours} of manual work each semester.
+    \href{https://github.com/snelltrail/generate_attendance}{(Link to GitHub repository.)}
+    % Also wrote a program in \textbf{Rust} which performs the same task.
+}
+
+\skillgroup{Webscraping to create MOBI files of web serials}{
+    Used the \texttt{BeautifulSoup} \textbf{Python} library to scrape several web serials spread over more than 100 webpages and collate the output in a single file.
+    My script formats the scraped data as HTML and automates the conversion to MOBI format to be read on Kindle.
+}
+
+\skillgroup{Simple big integer library in Rust}{
+    Worked on a basic \textbf{Rust} big integer library. \href{https://github.com/snelltrail/rust_number}{(Link to library on GitHub.)}
+}
+
+\skillgroup{Contribution to Rust language documentation}{
+    Found an error in the Rust documentation.
+    Submitted a \textbf{pull request} through GitHub to correct it. \href{https://github.com/rust-lang/book/pull/1343}{(Link to pull request.)}
+}
+
+\skillgroup{Programmed keyboard in C}{
+    Wrote \textbf{C} code to change the functionality of my keyboard using the QMK firmware. \href{https://github.com/snelltrail/qmk_firmware}{(Link to my fork of QMK.)}
+}
+
+%----------------------------------------------------------------------------------------
+%   ACADEMIC ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\section{Academic achievements}
+
+\tabbedblock{
+    \bf{2019} \> Runner-up for the A J Guttman Prize for best student talk\\
+    \> Australia and New Zealand Association of Mathematical Physics annual conference
+}
+\tabbedblock{
+    \bf{2018} \> Prizewinning talk at the Mathematics Department Student Research Conference (\textbf{\$500})
+}
+
+\tabbedblock{
+    \bf{2017-} \> University of Auckland Doctoral Scholarship (\textbf{\$27,600} per annum plus fees)
+}
+
+% \tabbedblock{
+%     \bf{2016} \> University of Auckland Research Masters Scholarship (\$13,130 plus fees)
+% }
+
+% \tabbedblock{
+%     \bf{2015-2016} \> Australian National University Summer Research Scholarship (Flights, accommodation and stipend)
+% }
+
+% \tabbedblock{
+%     \bf{2012-2014} \> University of Auckland Undergraduate Scholarship (\$5,000 per annum plus fees)
+% }
+
+% \tabbedblock{
+%     \bf{2012-2015} \> First in course awards for 8 of my courses
+% }
+
+% \tabbedblock{
+%     \bf{2007-2011}
+%     \> Dux (Valedictorian) of School\\
+%     \> NZQA Outstanding Scholar Award (top 60 students national cohort, \$5,000 per annum for three years)\\
+%     \> Top Student nationally in NZQA Scholarship Latin (2010)
+% }
+
+
+%
+%%------------------------------------------------
+%
+%\skillgroup{Web Development}
+%{
+%\textit{HTML5, CSS3/SASS, JavaScript/CoffeeScript/jQuery}\\
+%\textit{Ruby on Rails v3.1}\\
+%\textit{Test:Unit, RSpec, Cucumber, Selenium} - automated testing frameworks\\
+%\textit{Apache/Nginx Web Servers}\\
+%}
+%
+%%------------------------------------------------
+%
+%\skillgroup{Miscellaneous}
+%{
+%\textit{Microsoft SQL Server 2000/2005} - database architecture and administration\\
+%\textit{Transact-SQL} - data definition and manipulation\\
+%\textit{SQL Profiler} - performance tuning and debugging\\
+%\textit{MySQL Server}\\
+%\textit{CVS, DARCS, git} - source version control
+%}
+
+%----------------------------------------------------------------------------------------
+%   EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment history}
+
+\job
+{2013-}{}
+{University of Auckland Mathematics Department}
+{}
+{Course Administrator, Lecturer, Technical Adviser, Teaching Assistant}
+{
+    \begin{itemize}
+        \item Responsible for and managed the development and introduction of a new assessment format for undergraduate courses: students record themselves giving a presentation solving a short problem and are then peer-assessed.
+              Wrote the assessment and instructions, and was the point of contact for over \textbf{130} students.
+              Ran with an \textbf{86\%} submission rate, much higher than is usual for first year assignments.
+
+        \item Wrote assignments and delivered lectures for a first year Math course of over \textbf{400} students and received evaluations well above average for the Department, Faculty and University. 
+
+        \item Coordinated over \textbf{100} students and \textbf{5} tutors for the Superstart summer semester program.
+
+        %\item Delivered lectures and tutorials for two undergraduate courses, with very positive feedback and reviews.
+    \end{itemize}
+}
+
+% \job
+% {2015-2016}{}
+% {The Learning Collaborative}
+% {}
+% {Head of Intensive Courses}
+% {
+%     I led a team of three to manage the revision courses offered by The Learning Collaborative, a not-for-profit with the goal of increasing educational equality.
+%     I also oversaw the creation of resources for these courses, recruited and managed the tutors delivering them, and ran a marketing campaign leading to approximately 200 students attending our courses.
+% }
+
+% \job
+% {2012-}{2014}
+% {NCEA Campus}
+% {}
+% {Tutor}
+% {Responsible for delivering small group tutorial sessions over 1-2 days to high school students.
+% I taught mathematics, physics, chemistry statistics and French, and also produced the teaching resource for Level 3 Calculus.}
+
+%----------------------------------------------------------------------------------------
+%   PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications / preprints}
+
+\tabbedblock{
+    \bf{2018} \> \href{https://arxiv.org/abs/1806.09830}{\underline{\textit{Distinguished curves and integrability in Riemannian, conformal, and projective geometry}}}\\
+    \> A. Rod Gover, Daniel Snell, and Arman Taghavi-Chabert
+    % \> \textit{(arXiv:1806.09830, preprint)}
+}
+
+\tabbedblock{
+    \bf{2019} \> \href{https://arxiv.org/abs/2001.02778}{\underline{\textit{Distinguished curves and first integrals on Poincaré-Einstein and other conformally singular geometries}}}\\
+    \> A. Rod Gover and Daniel Snell
+    % \> \textit{(arXiv:1806.09830, preprint)}
+}
+
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Interests and hobbies}
+
+% \interestsgroup{
+% \interest{Badminton}
+% \interest{Running}
+% \interest{Magic the Gathering}
+% }
+
+%----------------------------------------------------------------------------------------
+%   REFEREE SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Referees}
+
+% \parbox{0.5\textwidth}{ % Second block
+% \begin{tabbing}
+% \hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Name} \> A. Rod Gover\\ % Referee name
+% {\bf Company} \> Department of Mathematics,\\ \hspace{8em}University of Auckland \\ % Referee company
+% {\bf Position} \> Professor and Supervisor \\ % Referee job title 
+% {\bf Contact} \> \href{r.gover@auckland.ac.nz}{r.gover@auckland.ac.nz} % Referee contact information
+% \end{tabbing}}
+% \hfill % Horizontal space between the two blocks
+% \parbox{0.5\textwidth}{ % First block
+% \begin{tabbing}
+% \hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
+% {\bf Name} \> Jade Leung \\ % Referee name
+% {\bf Company} \> The Learning Collaborative \\ % Referee company
+% {\bf Position} \> CEO \\ % Referee job title 
+% {\bf Contact} \> \href{mailto:jade.leung@thelearningcollaborative.org}{jade.leung@thelearningcollaborative.org} % Referee contact information
+% \end{tabbing}}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
